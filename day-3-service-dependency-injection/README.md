@@ -129,7 +129,7 @@ When a service is needed in multiple modules, it must be:
 - Imported wherever it’s needed
 
 Logger Service
-```
+```ts
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -141,7 +141,7 @@ export class LoggerService {
 ```
 
 common.module.ts
-```
+```ts
 import { Module } from '@nestjs/common';
 import { LoggerService } from './logger.service';
 
